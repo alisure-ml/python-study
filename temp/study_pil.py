@@ -390,6 +390,6 @@ if __name__ == "__main__":
     image_to_list(base_path + "list_image.png")
     """
 
-
+    raise Exception("调色板")
 
     pass
