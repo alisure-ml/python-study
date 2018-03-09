@@ -254,6 +254,7 @@ def fun(name, sleep_time):
     pass
 
 
+# 常用的
 def run_my_process_with_pool():
     pool = multiprocessing.Pool(processes=3)
 
