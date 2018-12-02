@@ -42,5 +42,7 @@ plt.subplot(236)
 plt.imshow(img)
 plt.title("Data show")
 
-plt.show()
+# 需要先保存再show()
 plt.savefig("matplot_sample.jpg")
+plt.show()
+plt.savefig("matplot_sample2.jpg")

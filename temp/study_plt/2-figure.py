@@ -14,11 +14,25 @@ plt.figure(figsize=(8, 4))
 plt.plot(x, y, label="$sin(x)$", color="red", linewidth=1)
 plt.plot(x, z, "b--", label="$cos(x^2)$", linewidth=1)
 
+# 生成网格
+# plt.grid()
+# plt.grid(axis="x")
+# plt.grid(axis="y")
+# plt.grid(c='r')
+# plt.grid(linestyle='-.')
+plt.grid(linestyle='--')
+
+# 设置坐标轴刻度
+plt.yticks(np.asarray(list(range(-10, 10))) / 10)
+# 设置Y轴范围
+plt.ylim(-1.2, 1.2)
+
 plt.xlabel("Time(s)")
 plt.ylabel("Volt")
 plt.title("PyPlot First Example")
-# 设置Y轴范围
-plt.ylim(-1.2, 1.2)
 # 显示图示
 plt.legend()
+
+# 需要先保存再show()
+plt.savefig("fig2.jpg")
 plt.show()
